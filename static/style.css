@@ -1,0 +1,325 @@
+.welcome {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.featured-campaigns {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.campaign-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.campaign {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.campaign h2 {
+    margin: 0;
+}
+
+.campaign a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.campaign a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    margin-top: 0;
+}
+
+.btn-donate {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-donate:hover {
+    background-color: #0056b3;
+}
+
+.back-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.donation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.donation-container h1 {
+    margin-top: 0;
+}
+
+.donation-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.donation-form input[type="text"],
+.donation-form input[type="number"],
+.donation-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.donation-form .btn-donate {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.donation-form .btn-donate:hover {
+    background-color: #0056b3;
+}
+
+.donation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.donation-list li {
+    margin-bottom: 5px;
+}
+
+.total-donated {
+    margin-top: 10px;
+}
+
+
+
+
+.register-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    margin-top: 0;
+}
+
+.message-list {
+    list-style: none;
+    padding: 0;
+}
+
+.message-list li {
+    margin-bottom: 5px;
+}
+
+.register-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-form .btn-register {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form .btn-register:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    margin-top: 0;
+}
+
+.message-list {
+    list-style: none;
+    padding: 0;
+}
+
+.message-list li {
+    margin-bottom: 5px;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form .btn-login {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form .btn-login:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.admin-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-container h1 {
+    margin-top: 0;
+}
+
+.fundraiser-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.fundraiser-form input[type="text"],
+.fundraiser-form input[type="email"],
+.fundraiser-form input[type="number"],
+.fundraiser-form textarea,
+.fundraiser-form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.fundraiser-form .btn-create {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fundraiser-form .btn-create:hover {
+    background-color: #0056b3;
+}

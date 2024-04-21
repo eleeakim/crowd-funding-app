@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Rafiki | Home Page{% endblock %}
+
+{% block content %}
+    <div class="welcome">
+        <h2>Welcome to Rafiki - Extend a Helping Hand</h2>
+        <p>Together, We Make a Difference ❤️</p>
+    </div>
+
+    <div class="featured-campaigns">
+        <h1>Featured Campaigns</h1>
+        <div class="campaign-list">
+            {% for fundraiser in fundraisers %}
+                <div class="campaign">
+                    <h2>{{ fundraiser.title }}</h2>
+                    <p>{{ fundraiser.description }}</p>
+                    <p>Goal: ${{ fundraiser.fundraising_goal }}</p>
+                    <p>End Date: {{ fundraiser.end_date }}</p>
+                    <p><a href="{{ url_for('fundraiser_detail', fundraiser_id=fundraiser.id) }}">View Details</a></p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+
+
+    

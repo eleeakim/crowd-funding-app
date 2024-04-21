@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Flask App{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    
+</head>
+<body>
+    {% include 'nav.html' %}
+    
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% include 'footer.html' %}
+
+
+    <script src="{{ url_for('static', filename='navscript.js') }}"></script>
+
+</body>
+</html>
+
+
+
+

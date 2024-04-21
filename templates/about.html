@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}About Rafiki{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1>{{ fundraiser.title }}</h1>
+        <p>{{ fundraiser.description }}</p>
+        <p>Organizer: {{ fundraiser.organizer_name }}</p>
+        <p>Email: {{ fundraiser.organizer_email }}</p>
+        <p>Goal: ${{ fundraiser.fundraising_goal }}</p>
+        <p>Start Date: {{ fundraiser.start_date }}</p>
+        <p>End Date: {{ fundraiser.end_date }}</p>
+        <p><a href="{{ url_for('donate', fundraiser_id=fundraiser.id) }}" class="btn-donate">Donate Now</a></p>
+        <a href="/" class="back-link">Go Back to Homepage</a>
+    </div>
+{% endblock %}
+
+
+    
+
+

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Rafiki - Donate{% endblock %}
+
+{% block content %}
+    <div class="donation-container">
+        <h1>Donate to {{ fundraiser.title }}</h1>
+        <p>Goal: ${{ fundraiser.fundraising_goal }}</p>
+
+        <form method="post" class="donation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+        
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required><br>
+        
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" step="0.01" required><br>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea><br>
+        
+            <input type="submit" value="Donate" class="btn-donate">
+        </form>
+
+        <h2>Recent Donations:</h2>
+        <ul class="donation-list">
+            {% for donation in donations %}
+                <li>{{ donation.name }} donated {{ donation.amount }} KES</li>
+            {% endfor %}
+        </ul>
+
+        <p class="total-donated">Total Amount Donated: {{ total_donated }} KES</p>
+    </div>
+{% endblock %}
+
+
+    

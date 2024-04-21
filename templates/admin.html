@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="admin-container">
+        <h1>Create Fundraiser</h1>
+        <form method="POST" action="/save_fundraiser" class="fundraiser-form">
+            <label for="title">Title:</label>
+            <input type="text" name="title"><br>
+            <label for="description">Description:</label>
+            <textarea name="description"></textarea><br>
+            <label for="organizer_name">Organizer Name:</label>
+            <input type="text" name="organizer_name"><br>
+            <label for="organizer_email">Organizer Email:</label>
+            <input type="email" name="organizer_email"><br>
+            <label for="fundraising_goal">Fundraising Goal:</label>
+            <input type="number" name="fundraising_goal"><br>
+            <label for="start_date">Start Date:</label>
+            <input type="date" name="start_date"><br>
+            <label for="end_date">End Date:</label>
+            <input type="date" name="end_date"><br>
+            <input type="submit" value="Create Fundraiser" class="btn-create">
+        </form>
+    </div>
+{% endblock %}
+
